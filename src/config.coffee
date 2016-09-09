@@ -3,7 +3,7 @@
 ##
 # Name of the EC2 Tag whose value is the time to shut down the instance
 #
-shutdowntimeTagName = "NonProd Shutdown"
+shutdowntimeTagName = "StopTime"
 
 ##
 # Timezone of the tag value
