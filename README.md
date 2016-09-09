@@ -11,7 +11,7 @@ YAS currently supports a small number of configuration options, all found in `sr
 ### Options
 
 * `shutdowntimeTagName` (String) - Name of the Tag whose value is the shutdown time of the instance.  Time should be in 24-hour with the following format "HH:MM".  For example, "16:00" or "08:30".
-* `timezone` (String) - Your timezone (or timezone of the shutdown time), using a [time zone identifier](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) amongst those listed here. For example, 'America/Chicago' or 'Europe/Paris'.
+* `shutdowntimeTimezone` (String) - Your timezone (or timezone of the shutdown time), using a [time zone identifier](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) amongst those listed here. For example, 'America/Chicago' or 'Europe/Paris'.
 * `regions` (Array) - Listing of the AWS Regions (e.g. us-west-2, us-east-1) in which to check for and stop tagged running instances.
 
 ## Role Setup

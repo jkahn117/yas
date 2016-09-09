@@ -8,7 +8,7 @@ shutdowntimeTagName = "StopTime"
 ##
 # Timezone of the tag value
 #
-timezone = "America/Chicago"
+shutdowntimeTimezone = "America/Chicago"
 
 ##
 # Regions to check
