@@ -138,13 +138,8 @@ handleError = (error, context) ->
 #  - timeStr: time to test, in format "HH:MM", 24 hour
 #
 isBeforeCurrentTime = (timeStr) ->
-  timeParts = timeStr.split(':')
-  time = new Date()
-  time.setHours(timeParts[0], timeParts[1], 0)
-
   # convert shutdownTime to UTC from configured timezone
-  shutdownTime = moment(time, timezone).tz('UTC')
-
+  shutdownTime = moment.tz(timeStr, "HH:mm", shutdowntimeTimezone).tz('UTC')
   return shutdownTime.isBefore(moment())
 
 
