@@ -52,6 +52,8 @@ moment   = require('moment-timezone')
 # Main handler function.
 #
 exports.handler = (event, context) ->
+    console.log "Starting YAS -- Current Time is #{moment().format()}"
+
     async.each regions, ((region, callback) =>
       stopInstancesInRegion(region, callback)
     ), (error) ->
